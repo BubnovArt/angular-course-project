@@ -186,35 +186,3 @@ body {
   position: relative;
   padding-bottom: 1px;
 }
-
-/*RIGHT*/
-.chat-body .answer.right {
-  padding: 0 58px 0 0;
-  text-align: right;
-  float: right;
-}
-
-.chat-body .answer.right .avatar {
-  right: 0;
-}
-
-.chat-body .answer.right .avatar .status {
-  left: 4px;
-}
-
-.chat-body .answer.right .text {
-  background: #7266ba;
-  color: #ffffff;
-  border-radius: 8px 8px 0 8px;
-}
-
-.chat-body .answer.right .text:before {
-  right: -30px;
-  border-left-color: #7266ba;
-  border-left-width: 12px;
-}
-
-.chat-body .answer.right .time {
-  padding-right: 12px;
-  color: #333333;
-}

@@ -1,1 +1,6 @@
-Users list here
+<div class="col-inside-lg decor-default chat" style="overflow-y: scroll; outline: none;" tabindex="5000">
+  <div class="chat-users">
+    <h6>Online</h6>
+    <user *ngFor="let user of users" [user]="user"></user>
+  </div>
+</div>

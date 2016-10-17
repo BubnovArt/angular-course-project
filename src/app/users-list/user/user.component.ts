@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {IUser} from "../../shared/interfaces/user.interface";
 
 @Component({
   selector: 'user',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 
+  @Input()
+  public user: IUser;
+
+  constructor() {}
 }
