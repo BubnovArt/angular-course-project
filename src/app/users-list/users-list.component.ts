@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {IUser} from "../shared/interfaces/user.interface";
 
 @Component({
@@ -33,4 +33,11 @@ export class UsersListComponent {
       status: 'Offline'
     },
     ];
+
+    @Input()
+    public val: string;
+
+    public onInputKeyup(event) {
+      this.val = event;
+    }
 }

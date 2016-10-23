@@ -12,6 +12,10 @@ import { ChatAreaComponent } from './chat-area/chat-area.component';
 import { AnswerComponent } from './chat-area/answer/answer.component';
 import { MessageLeftComponent } from './chat-area/message-left/message-left.component';
 import { MessageRightComponent } from './chat-area/message-right/message-right.component';
+import { UsersSearchComponent } from './users-list/users-search/users-search.component';
+
+/* Pipes */
+import {UsersPipe} from "./users-list/pipes/users.pipe";
 
 @NgModule({
   declarations: [
@@ -21,14 +25,18 @@ import { MessageRightComponent } from './chat-area/message-right/message-right.c
     ChatAreaComponent,
     AnswerComponent,
     MessageLeftComponent,
-    MessageRightComponent
+    MessageRightComponent,
+    UsersSearchComponent,
+    UsersPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    UsersPipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
