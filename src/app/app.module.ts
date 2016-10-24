@@ -35,7 +35,6 @@ import {UsersPipe} from "./users-list/pipes/users.pipe";
     HttpModule
   ],
   providers: [
-    UsersPipe
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'answer',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['answer.component.css']
 })
 export class AnswerComponent {
+  @Output() messageEmitter: EventEmitter<string> = new EventEmitter();
 
+  public sendMessage(text): void {
+    this.messageEmitter.emit(text.value);
+    text.value = "";
+  }
 }

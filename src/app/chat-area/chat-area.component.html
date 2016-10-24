@@ -2,15 +2,7 @@
   <div class="chat-body">
     <h6>Mini Chat</h6>
     <message-left></message-left>
-    <message-right></message-right>
-    <message-left></message-left>
-    <message-right></message-right>
-    <message-right></message-right>
-    <message-left></message-left>
-    <message-right></message-right>
-    <message-left></message-left>
-    <message-right></message-right>
-    <message-right></message-right>
-    <answer></answer>
+    <message-right [newMessage]="newMessage" [messageDate]="messageDate"></message-right>
+    <answer (messageEmitter)="onMessage($event)"></answer>
   </div>
 </div>

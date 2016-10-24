@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'message-right',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['message-right.component.css']
 })
 export class MessageRightComponent {
+  @Input()
+  public newMessage: string;
 
+  @Input()
+  public messageDate: string;
+
+  public currentDate = new Date();
 }

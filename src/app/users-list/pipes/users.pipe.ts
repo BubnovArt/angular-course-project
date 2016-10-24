@@ -8,6 +8,6 @@ export class UsersPipe implements PipeTransform {
     if(args === "" || args === undefined) {
       return value;
     }
-    return value.filter((item) => item.name.startsWith(args));
+    return value.filter((item) => item.name.toLowerCase().startsWith(args.toLowerCase()));
   }
 }
